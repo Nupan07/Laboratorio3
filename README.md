@@ -79,7 +79,7 @@ Se aplicaron diferentes tipos de filtros para mejorar la calidad de las señales
 
 
 ![](https://github.com/Nupan07/Laboratorio3/blob/main/Ventana%20Hamming.png)
-![] (https://github.com/Nupan07/Laboratorio3/blob/main/Ventana%20Hamming.png)
+![](https://github.com/Nupan07/Laboratorio3/blob/main/Ventana%20Hanning.png)
 ### 3. Análisis de Pulsos
 
 Se implementaron técnicas de detección de picos para identificar los picos de la señal EMG. Se calcularon estadísticas como la media, la mediana y la desviación estándar de cada pulso detectado, lo que permite caracterizar la actividad muscular.
