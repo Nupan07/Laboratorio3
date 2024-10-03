@@ -11,7 +11,7 @@ from tkinter import filedialog
 from tkinter import ttk
 from scipy.signal import find_peaks, butter, filtfilt
 from scipy.fftpack import fft
-import serial  # Asegúrate de tener instalada la biblioteca pyserial
+import serial  # instalar la biblioteca pyserial
 import time
 
 class EMGAnalyzer:
@@ -19,8 +19,8 @@ class EMGAnalyzer:
         self.root = root
         self.root.title("Analizador de EMG")
         self.data = []
-        self.fs = 1000  # Frecuencia de muestreo predeterminada
-        self.serial_port = 'COM3'  # Cambia esto al puerto correspondiente de tu ESP32
+        self.fs = 1000  # Frecuencia de muestreo
+        self.serial_port = 'COM3'  # Cambia esto al puerto correspondiente
         self.baud_rate = 115200  # Asegúrate de que coincida con tu configuración ESP32
         self.create_widgets()
 
@@ -52,8 +52,8 @@ class EMGAnalyzer:
         if file_path:
             try:
                 data = np.loadtxt(file_path, delimiter=',', skiprows=3)
-                self.data = data[:, 1]  # Cargar solo la columna de los datos de la señal
-                self.fs = 1000  # Ajustar frecuencia de muestreo si es necesario
+                self.data = data[:, 1] 
+                self.fs = 1000 
                 print("Señal cargada correctamente")
                 plt.figure()
                 plt.plot(self.data, label="Señal Cargada", color='blue')
@@ -155,27 +155,26 @@ class EMGAnalyzer:
     def real_time_capture(self):
         try:
             with serial.Serial(self.serial_port, self.baud_rate, timeout=1) as ser:
-                plt.ion()  # Activar modo interactivo para actualización en tiempo real
+                plt.ion() 
                 fig, ax = plt.subplots()
                 ax.set_title("Captura en Tiempo Real")
                 ax.set_xlabel("Muestras")
                 ax.set_ylabel("Amplitud")
-                line, = ax.plot([], [], color='blue')  # Inicializar la línea vacía
-                ax.set_xlim(0, 100)  # Limites iniciales
-                ax.set_ylim(-1, 1)  # Ajusta según la amplitud esperada
+                line, = ax.plot([], [], color='blue') 
+                ax.set_xlim(0, 100)
+                ax.set_ylim(-1, 1)  
                 plt.show()
 
                 # Bucle de captura de datos
                 while True:
-                    data = ser.readline().decode('utf-8').strip()  # Lee una línea del ESP32
+                    data = ser.readline().decode('utf-8').strip()  
                     if data:
                         value = float(data)  # Convierte el valor a float
-                        self.data.append(value)  # Agrega el valor a la lista de datos
-                        # Actualiza la gráfica
+                        self.data.append(value) 
                         line.set_xdata(np.arange(len(self.data)))
                         line.set_ydata(self.data)
-                        ax.set_xlim(0, len(self.data))  # Ajusta el límite x
-                        plt.pause(0.01)  # Pausa para actualizar la gráfica
+                        ax.set_xlim(0, len(self.data))  
+                        plt.pause(0.01)
 
         except Exception as e:
             print(f"Error en la captura en tiempo real: {e}")
