@@ -1,7 +1,7 @@
 # README - Analizador de EMG
 
 ## Introducción
-
+El electromiograma (EMG) es una grabación de la actividad eléctrica de los músculos, también llamada actividad mioeléctrica.Para poder realizar la captura de las señales mioeléctricas se utilizan dos electrodos activos y un electrodo de tierra o conocido como el de referencia .
 
 ### Objetivos
 
@@ -84,14 +84,32 @@ Se aplicaron diferentes tipos de filtros para mejorar la calidad de las señales
 
 Se implementaron técnicas de detección de picos para identificar los picos de la señal EMG. Se calcularon estadísticas como la media, la mediana y la desviación estándar de cada pulso detectado, lo que permite caracterizar la actividad muscular.
 
+### 3.1. Hipotesis nula 
+En estadística, una hipótesis nula es una afirmación que se utiliza para negar o confirmar una conclusión sobre un parámetro de la muestra que se está estudiando. En el contexto de la prueba de hipótesis, la hipótesis nula sostiene que los resultados de un experimento son incorrectos.
+
+Por lo tanto, la hipótesis nula es la que se intenta rechazar. Si el investigador logra rechazar la hipótesis nula, esto sugiere que la hipótesis que quería probar en su estudio estadístico probablemente sea verdadera. Por el contrario, si no se puede rechazar la hipótesis nula, esto indica que la suposición que se quería demostrar es más probable que sea falsa. Más adelante, veremos en qué situaciones se puede rechazar la hipótesis nula.
+
+### Frecuencia Dominante:
+El resultado dice que la frecuencia dominante en la señal que analizaste es de 24.35 Hz. Esto significa que, en tu señal, hay un pico importante en esa frecuencia, lo que puede indicar que esa es la frecuencia más relevante o activa en la actividad muscular que estás midiendo.
+
+### Estadístico de Prueba:
+El estadístico de prueba es 8951091.0. Este número se usa para comparar cómo se comportan los datos con respecto a la hipótesis nula. Cuanto más alto sea este número, más probable es que los datos se aparten de lo que se espera según la hipótesis nula.
+
+p-valor: 
+El p-valor obtenido es 0.774. Este valor es clave porque te ayuda a determinar si debes rechazar la hipótesis nula. Un p-valor alto, como el que se obtuvo , generalmente indica que no hay suficiente evidencia para rechazar la hipótesis nula.
+
+
+
+
 ### 4. Visualización
 
 Los resultados se visualizaron mediante gráficos, que incluyen:
 
 - **Gráficas de la señal original y filtrada**: Comparación entre la señal capturada y la señal filtrada.
 - **Pulsos detectados**: Visualización de los picos en la señal EMG.
-- **Espectro de Frecuencias**: Representación de la transformada de Fourier de la señal.
-
+- **Representación de la transformada de Fourier de la señal**
+-  **Ventana de Hamming y Hanning**
+-  
 ## Resultados
 
 Los resultados obtenidos del análisis de las señales EMG incluyen:
