@@ -76,7 +76,8 @@ Se aplicaron diferentes tipos de filtros para mejorar la calidad de las señales
 
 - **Filtro Butterworth**: Se utilizó un filtro de paso bajo para eliminar el ruido de alta frecuencia, estableciendo una frecuencia de corte en 100 Hz.
 - **Ventanas de Hamming y Hanning**: Estas ventanas se aplicaron para reducir el efecto de fuga al realizar la transformada de Fourier, mejorando la resolución en frecuencia.
-
+![](https://github.com/Nupan07/Laboratorio3/blob/main/Ventana%20Hamming.png)
+![] 
 ### 3. Análisis de Pulsos
 
 Se implementaron técnicas de detección de picos para identificar los picos de la señal EMG. Se calcularon estadísticas como la media, la mediana y la desviación estándar de cada pulso detectado, lo que permite caracterizar la actividad muscular.
