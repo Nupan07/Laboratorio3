@@ -90,13 +90,13 @@ En estadística, una hipótesis nula es una afirmación que se utiliza para nega
 Por lo tanto, la hipótesis nula es la que se intenta rechazar. Si el investigador logra rechazar la hipótesis nula, esto sugiere que la hipótesis que quería probar en su estudio estadístico probablemente sea verdadera. Por el contrario, si no se puede rechazar la hipótesis nula, esto indica que la suposición que se quería demostrar es más probable que sea falsa. Más adelante, veremos en qué situaciones se puede rechazar la hipótesis nula.
 
 ### Frecuencia Dominante:
-El resultado dice que la frecuencia dominante en la señal que analizaste es de 24.35 Hz. Esto significa que, en tu señal, hay un pico importante en esa frecuencia, lo que puede indicar que esa es la frecuencia más relevante o activa en la actividad muscular que estás midiendo.
+El resultado dice que la frecuencia dominante en la señal que se analizo  es de 24.35 Hz. Esto significa que, en la señal, hay un pico importante en esa frecuencia, lo que puede indicar que esa es la frecuencia más relevante o activa en la actividad muscular que se estan midiendo.
 
 ### Estadístico de Prueba:
-El estadístico de prueba es 8951091.0. Este número se usa para comparar cómo se comportan los datos con respecto a la hipótesis nula. Cuanto más alto sea este número, más probable es que los datos se aparten de lo que se espera según la hipótesis nula.
+El estadístico de prueba es 8951091.0. Este número se usa para comparar cómo se comportan los datos con respecto a la hipótesis nula. Cuanto más alto sea este número, más probable es que los datos se aparten de lo que se espera.
 
 p-valor: 
-El p-valor obtenido es 0.774. Este valor es clave porque te ayuda a determinar si debes rechazar la hipótesis nula. Un p-valor alto, como el que se obtuvo , generalmente indica que no hay suficiente evidencia para rechazar la hipótesis nula.
+El p-valor obtenido es 0.774. Este valor es clave porque  ayuda a determinar si se debe  rechazar la hipótesis nula. Un p-valor alto, como el que se obtuvo , generalmente indica que no hay suficiente evidencia para rechazar la hipótesis nula.
 
 
 
